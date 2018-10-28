@@ -1,6 +1,6 @@
 # asyncio (python3.6)
 
-I've spent the last few months attempting to get asyncio to work in python 3.6 but couldnt seem to get things to work correctly. Finally, I was shown a snippet that I can work with so I figure its time to share.
+I've spent the last few months attempting to get asyncio to work in python 3.6 but couldnt find a smooth flow to get things working correctly. Finally, I was shown a snippet that seems to have a pretty simple flow so I figure it's time to share.
 
 Note: as always, yes you can split the invocations into multiple variables. But I believe YOU should determine when that is done based on the style of your code. This is simply the minimum code I've found is actually required to make something work.
 
