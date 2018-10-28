@@ -1,4 +1,4 @@
-# asyncio
+# finally understanding asyncio (python3.6)
 
 I've spent the last few months attempting to get asyncio to work in python 3.6 but couldnt seem to get things to work correctly. Finally, I was shown a snippet that I can work with so I figre I should share.
 
@@ -43,7 +43,7 @@ imma runnin 9
 imma runnin 2
 imma runnin 0
 ```
-Awesome, things are actually working. So what if I didnt have all the operations ready to go immediately? What if I wanted to sort of queue a bunch of jobs for my code to run at the end?
+Awesome, things are actually working. So what if I didnt have all the operations ready to go immediately? What if I wanted to progressively queue a bunch of jobs for my code to run at the end or some predetermined "processing point"?
 ```python
 >>> asyncio.gather(waffle(7))
 <_GatheringFuture pending>
