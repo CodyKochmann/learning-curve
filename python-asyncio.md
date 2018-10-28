@@ -1,4 +1,4 @@
-# finally understanding asyncio (python3.6)
+# asyncio (python3.6)
 
 I've spent the last few months attempting to get asyncio to work in python 3.6 but couldnt seem to get things to work correctly. Finally, I was shown a snippet that I can work with so I figure its time to share.
 
