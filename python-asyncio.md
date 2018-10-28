@@ -46,14 +46,12 @@ imma runnin 0
 Awesome, things are actually working. So what if I didnt have all the operations ready to go immediately? What if I wanted to progressively queue a bunch of jobs for my code to run at the end or some predetermined "processing point"?
 ```python
 >>> asyncio.gather(waffle(7))
-<_GatheringFuture pending>
 >>> asyncio.gather(waffle(8))
-<_GatheringFuture pending>
 >>> # do some unrelated stuff here
->>> # pend another job to the queue
+>>> # ...
+>>> # pend another job to the queue just because
 >>> asyncio.gather(waffle(9))
-<_GatheringFuture pending>
->>> # when we are actually ready to fire the queued jobs, this seemed to work
+>>> # when we are actually ready to fire the queued jobs
 >>> asyncio.get_event_loop().run_until_complete(asyncio.gather())
 ``` 
 Output:
