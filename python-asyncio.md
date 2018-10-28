@@ -60,3 +60,6 @@ imma runnin 7
 imma runnin 8
 imma runnin 9
 ```
+So why did I do this long chain of calls to invoke things? 
+
+In the change log for python 3.7 there were a handful of "usability changes" done to asyncio where they basically added a couple easier to read and understand functions and noted them to be shortcuts for various snippets. `asyncio.get_event_loop().run_until_complete()` was one of the snippets that was shortcutted which lead me to believe that was one of the primary intended uses of asyncio. No way to be sure, but being that I actually understand whats going on with that specific chain leads me to believe this is true.
